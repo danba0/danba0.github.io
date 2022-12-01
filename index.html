@@ -17,8 +17,8 @@
         function onScanSuccess(decodedText, decodedResult) {
             // Handle on success condition with the decoded text or result.
 //             alert(`Scan result: ${decodedText}`, decodedResult);
-//             document.getElementById("html5-qrcode-button-camera-stop").click();
             document.getElementById("scan").innerText = decodedText;
+            document.getElementById("html5-qrcode-button-camera-stop").click();
         }
 
         function onScanError(errorMessage) {

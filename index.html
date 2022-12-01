@@ -11,12 +11,14 @@
     <div style="text-align: center;">
         <h1>Uniform Laundry Scanner</h1>
     </div>
+    <div id="scan"></div>
     <div style="width: 80%; margin: auto;" id="reader"></div>
     <script>
         function onScanSuccess(decodedText, decodedResult) {
             // Handle on success condition with the decoded text or result.
-            alert(`Scan result: ${decodedText}`, decodedResult);
-            document.getElementById("html5-qrcode-button-camera-stop").click();
+//             alert(`Scan result: ${decodedText}`, decodedResult);
+//             document.getElementById("html5-qrcode-button-camera-stop").click();
+            document.getElementById("scan").text = decodedText;
         }
 
         function onScanError(errorMessage) {
